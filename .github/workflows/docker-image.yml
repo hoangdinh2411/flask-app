@@ -24,8 +24,8 @@ jobs:
       matrix:
         versions: [3.12]
     steps:
-    - uses: action/checkout@v4
-    - name: intall Python 
+    - uses: actions/checkout@v4
+    - name: install  Python 
       uses: actions/setup-python@v5
       with:
         python-version: ${{ matrix.versions }}
