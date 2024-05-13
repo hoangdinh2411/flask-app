@@ -30,6 +30,6 @@ jobs:
       with:
         python-version: ${{ matrix.versions }}
     - name: install requirements file
-      run: python -r requirements.txt
+      run: pip -r requirements.txt
     - name: run test
       run: pytest text_app.py
